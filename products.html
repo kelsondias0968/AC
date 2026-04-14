@@ -1646,7 +1646,7 @@ body{
         <span class="pill">JHB</span>
       </div>
 
-      <!-- aqui entra data dinâmica ou "Get It Tomorrow!" -->
+      <!-- dynamic date or "Get It Tomorrow!" -->
       <div class="delivery-inline">
   <span class="delivery-range" id="singleDeliveryRange">--</span>
   <a class="tcs" href="#">T&Cs Apply</a>
@@ -2122,7 +2122,7 @@ body{
 </div>
 
   <script>
-    // === Carousel simples (pontinhos trocam a imagem) ===
+    // === Simple Carousel (dots switch images) ===
     const images = ["AfuhC.jpg", "HzA9p.jpg", "aMEaF.jpg", "mBj7w.jpg", "puP5M.jpg", "r9doI.jpg", "vkbjV.jpg"];
 
     const productImage = document.getElementById("productImage");
@@ -2146,7 +2146,7 @@ body{
         if(modal.classList.contains("is-open")){
           modalImg.src = images[index];
         }
-      }, 150); // Metade do tempo da transição CSS para suavizar a troca
+      }, 150); // Half the CSS transition time to smooth the switch
     }
 
     dots.forEach(dot => {
@@ -2172,7 +2172,7 @@ body{
       if(e.target === modal) modal.classList.remove("is-open");
     });
 
-    // === Seleção de ofertas (radio visual) ===
+    // === Offer selection (visual radio) ===
 const offerCards = Array.from(document.querySelectorAll(".offer-card"));
 function selectOffer(idx){
   offerCards.forEach((c, i) => c.classList.toggle("is-selected", i === idx));
@@ -2222,7 +2222,7 @@ if(piOpen && piModal && piClose){
 
   piClose.addEventListener("click", closePi);
 
-  // clicar fora (overlay) fecha
+  // click outside (overlay) closes
   piModal.addEventListener("click", (e) => {
     if(e.target === piModal) closePi();
   });
@@ -2412,10 +2412,10 @@ productImage.addEventListener("mouseup", (e) => {
   }
 
   const today = new Date();
-  const start = addDays(today, 1);  // amanhã
-  const end   = addDays(today, 2);  // depois de amanhã
+  const start = addDays(today, 1);  // tomorrow
+  const end   = addDays(today, 2);  // day after tomorrow
 
-  // Se começa amanhã, mostra Get It Tomorrow!
+  // If starts tomorrow, show Get It Tomorrow!
   const tomorrow = addDays(today, 1);
   const isTomorrow =
     start.getFullYear() === tomorrow.getFullYear() &&
