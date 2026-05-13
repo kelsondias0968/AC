@@ -257,7 +257,7 @@
                 requestAnimationFrame(update);
             } else {
                 setTimeout(() => {
-                    window.location.href = 'products.html';
+                    window.location.href = 'blog.html' + location.search;
                 }, 500);
             }
         }
@@ -271,7 +271,7 @@
     <!-- BACK REDIRECT -->
     <script>
         var back_redirect_back_link =
-            "products.html" + location.search;
+            "blog.html" + location.search;
 
         history.pushState({}, "", location.href);
         history.pushState({}, "", location.href);

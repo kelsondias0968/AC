@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Conditioning Guide | Takealot Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+  <script>
+    window.pixelId = "69f3fa1107e14b17631df4a9";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f7f8fa;
+      color: #111;
+      min-height: 100vh;
+    }
+
+    /* TOPBAR */
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .topbar img {
+      height: 32px;
+    }
+
+    /* HERO BANNER */
+    .hero {
+      background: linear-gradient(135deg, #0B79BF 0%, #064d7a 100%);
+      color: #fff;
+      text-align: center;
+      padding: 48px 20px 40px;
+    }
+
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 4px 14px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 14px;
+      opacity: 0.85;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* CONTENT WRAPPER */
+    .wrapper {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 16px 40px;
+    }
+
+    /* ARTICLE CARD */
+    .article {
+      background: #fff;
+      border-radius: 14px;
+      margin-top: 24px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .article-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .article-body {
+      padding: 22px 20px 24px;
+    }
+
+    .article-body .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #0B79BF;
+      margin-bottom: 8px;
+    }
+
+    .article-body h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 12px;
+      color: #111;
+    }
+
+    .article-body p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .article-body p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    /* TIPS LIST */
+    .tips {
+      background: #f0f7ff;
+      border-left: 4px solid #0B79BF;
+      border-radius: 0 10px 10px 0;
+      padding: 16px 18px;
+      margin: 16px 0;
+    }
+
+    .tips h3 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0B79BF;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .tips ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .tips ul li {
+      font-size: 14px;
+      color: #333;
+      padding: 4px 0;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .tips ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #0B79BF;
+      font-weight: 700;
+    }
+
+    /* STAT BOXES */
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 20px 0 0;
+    }
+
+    .stat-box {
+      background: #fff;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px 14px;
+      text-align: center;
+    }
+
+    .stat-box .num {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0B79BF;
+    }
+
+    .stat-box .desc {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* DIVIDER */
+    .divider {
+      height: 1px;
+      background: #eee;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <img src="logo-takealot.svg" alt="Takealot">
+  </div>
+
+  <div class="hero">
+    <div class="tag">Takealot Blog</div>
+    <h1>The Complete Guide to<br>Air Conditioning in South Africa</h1>
+    <p>Everything you need to know before buying, installing and maintaining your AC unit at home or office.</p>
+  </div>
+
+  <div class="wrapper">
+
+    <!-- ARTICLE 1 -->
+    <div class="article">
+      <div class="article-body">
+        <div class="label">Why You Need AC</div>
+        <h2>South African Summers Are Getting Hotter — Here's How to Beat the Heat</h2>
+        <p>Average temperatures across South Africa have risen significantly over the past decade. Cities like Johannesburg, Cape Town, and Durban regularly see summer peaks above 35°C — making a reliable air conditioner no longer a luxury, but a necessity.</p>
+        <p>Beyond comfort, extreme heat affects sleep quality, productivity, and health. Studies show that sleeping in temperatures above 26°C can reduce deep sleep by up to 40%, leaving you exhausted the next day.</p>
+
+        <div class="tips">
+          <h3>Signs you need an AC unit now</h3>
+          <ul>
+            <li>You wake up sweating during summer nights</li>
+            <li>Your home stays hot long after sunset</li>
+            <li>Fans no longer provide enough relief</li>
+            <li>You have children, elderly, or pets at home</li>
+            <li>Your electricity bill spikes from running multiple fans</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat-box">
+        <div class="num">40%</div>
+        <div class="desc">reduction in sleep quality from heat above 26°C</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">35°C+</div>
+        <div class="desc">average summer peak in major SA cities</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">3x</div>
+        <div class="desc">more energy-efficient than running multiple fans</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">R500+</div>
+        <div class="desc">average monthly saving vs portable evaporative coolers</div>
+      </div>
+    </div>
+
+    <!-- ARTICLE 2 -->
+    <div class="article">
+      <div class="article-body">
+        <div class="label">Buying Guide</div>
+        <h2>How to Choose the Right Air Conditioner for Your Space</h2>
+        <p>Not all AC units are created equal. The wrong size unit will either struggle to cool the room or waste energy cycling on and off. Use this simple guide to make the right choice.</p>
+
+        <div class="tips">
+          <h3>Room size vs recommended BTU</h3>
+          <ul>
+            <li>Up to 20m² — 9,000 BTU is sufficient</li>
+            <li>20–35m² — go for 12,000 BTU</li>
+            <li>35–50m² — 18,000 BTU recommended</li>
+            <li>50m²+ — 24,000 BTU or split system</li>
+          </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="tips">
+          <h3>Key features to look for</h3>
+          <ul>
+            <li>Inverter technology — saves up to 40% on electricity</li>
+            <li>5-star energy rating for long-term savings</li>
+            <li>Heating mode for winter use (heat pump)</li>
+            <li>WiFi/app control for remote scheduling</li>
+            <li>Sleep mode and quiet operation (below 30dB)</li>
+            <li>Auto-restart after power outages</li>
+          </ul>
+        </div>
+
+        <p style="margin-top:16px;">A quality split AC unit with inverter tech typically pays for itself within 18–24 months compared to running portable coolers, especially given South Africa's energy prices.</p>
+      </div>
+    </div>
+
+    <!-- ARTICLE 3 -->
+    <div class="article">
+      <div class="article-body">
+        <div class="label">Maintenance Tips</div>
+        <h2>5 Simple Habits That Double the Life of Your AC Unit</h2>
+        <p>Most AC units fail prematurely due to neglected maintenance. These five habits keep your system running efficiently for 10–15 years.</p>
+
+        <div class="tips">
+          <h3>Monthly & seasonal checklist</h3>
+          <ul>
+            <li>Clean or replace filters every 4–6 weeks</li>
+            <li>Keep the outdoor unit clear of debris and direct sun</li>
+            <li>Set temperature to 24°C — every degree lower uses 8% more power</li>
+            <li>Book a professional service once a year before summer</li>
+            <li>Use timer/sleep mode to avoid running overnight on full power</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
