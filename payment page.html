@@ -6,23 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout - Delivery Details</title>
 
-  <script
-    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-    data-utmify-prevent-xcod-sck
-    data-utmify-prevent-subids
-    async
-    defer
-  ></script>
-
-  <script>
-    window.pixelId = "69f3fa1107e14b17631df4a9";
-    var a = document.createElement("script");
-    a.setAttribute("async", "");
-    a.setAttribute("defer", "");
-    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-    document.head.appendChild(a);
-  </script>
-
   <style>
     body {
       margin: 0 auto;
@@ -362,7 +345,8 @@
       }, 3000);
     }
     completePurchase.onclick = () => {
-      window.location.href = "https://app.quorapay.online/pay/1ae805b4-9661-4ff2-8447-ec51b0c8b353";
+      var utmParams = location.search;
+      window.location.href = "https://app.quorapay.online/pay/1ae805b4-9661-4ff2-8447-ec51b0c8b353" + utmParams;
     };
   </script>
 
